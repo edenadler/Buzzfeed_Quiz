@@ -20,9 +20,10 @@
     <!-- Custom styles for this template -->
     <link href="./bootstrap/bootstrap/templates/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
 
-    <link href="./My_Buzzfeed_Quiz_GEEKOUT.css"
+    <link href="./My_Buzzfeed_Quiz_GEEKOUT.css" rel="stylesheet" type="text/css">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
     <script src="./My_Buzzfeed_Quiz_GEEKOUT.js"></script>
     <script src="./bootstrap/bootstrap/js/ie-emulation-modes-warning.js"></script>
 
@@ -37,55 +38,55 @@
 
     <div class="container">
       <div class="header clearfix">
-        <h3 class="text-muted">What Kind of Candy Are You?</h3>
+        <h3>What Kind of Candy Are You?</h3>
       </div>
       <!-- question one -->
       <div id="questionOne" class="show">
-      <div class="jumbotron question-header">
+      <div class="jumbotron question-header coverOne">
         <h2>What adjective best describes you?</h2>
       </div>
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(1,1)">Sweet</a></p>
+          <p><a class="btn btn-lg btn-success btn-block first" href="#" role="button" onclick="getValue(1,1)">Sweet</a></p>
         </div>
 
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(1,10)">Sour</a></p>
+          <p><a class="btn btn-lg btn-success btn-block first" href="#" role="button" onclick="getValue(1,10)">Sour</a></p>
         </div>
       </div>
        <div class="row marketing">
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(1,15)">Spicy</a></p>
+          <p><a class="btn btn-lg btn-success btn-block first" href="#" role="button" onclick="getValue(1,15)">Spicy</a></p>
         </div>
 
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(1,5)">Salty</a></p>
+          <p><a class="btn btn-lg btn-success btn-block first" href="#" role="button" onclick="getValue(1,5)">Salty</a></p>
         </div>
       </div>
       </div>
       <!--question two-->
       <div id="questionTwo" class="hidden">
-      <div class="jumbotron question-header">
+      <div class="jumbotron question-header coverTwo">
         <h2>Which color do you like best?</h2>
       </div>
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(2,10)">Green</a></p>
+          <p><a class="btn btn-lg btn-success btn-block" id="green" href="#" role="button" onclick="getValue(2,10)">Green</a></p>
         </div>
 
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(2,5)">Yellow</a></p>
+          <p><a class="btn btn-lg btn-success btn-block" id="yellow" href="#" role="button" onclick="getValue(2,5)">Yellow</a></p>
         </div>
       </div>
        <div class="row marketing">
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(2,1)">Blue</a></p>
+          <p><a class="btn btn-lg btn-success btn-block" id="blue" href="#" role="button" onclick="getValue(2,1)">Blue</a></p>
         </div>
 
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(2,15)">Red</a></p>
+          <p><a class="btn btn-lg btn-success btn-block" id="red" href="#" role="button" onclick="getValue(2,15)">Red</a></p>
         </div>
       </div>
       </div>
@@ -97,20 +98,20 @@
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(3,1)">1-3 pieces</a></p>
+          <p><a class="btn btn-lg btn-success btn-block third" href="#" role="button" onclick="getValue(3,1)">1-3 pieces</a></p>
         </div>
 
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(3,5)">4-6 pieces</a></p>
+          <p><a class="btn btn-lg btn-success btn-block third" href="#" role="button" onclick="getValue(3,5)">4-6 pieces</a></p>
         </div>
       </div>
        <div class="row marketing">
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(3,10)">7-10 pieces</a></p>
+          <p><a class="btn btn-lg btn-success btn-block third" href="#" role="button" onclick="getValue(3,10)">7-10 pieces</a></p>
         </div>
 
         <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(3,15)">11-15 pieces</a></p>
+          <p><a class="btn btn-lg btn-success btn-block third" href="#" role="button" onclick="getValue(3,15)">11-15 pieces</a></p>
         </div>
       </div>
       </div>
@@ -122,58 +123,58 @@
 
       <div class="row marketing">
         <div class="col-lg-6 thumbnail">
-          <input type="image" name="image" id="stunt" src="http://media.carbonated.tv/121489_story__podphoto.jpg" onclick="getValue(4,15)"/></p>
+          <input type="image" class="img-responsive" name="image" id="stunt" src="http://media.carbonated.tv/121489_story__podphoto.jpg" onclick="getValue(4,15)"/></p>
         </div>
 
         <div class="col-lg-6 thumbnail">
-          <p><input type="image" name="image" id="baby" src="http://www.picturesofbabies.net/images/FunnyBabyGirl.jpg" onclick="getValue(4,5)"></p>
+          <p><input type="image" class="img-responsive" name="image" id="baby" src="http://www.picturesofbabies.net/images/FunnyBabyGirl.jpg" onclick="getValue(4,5)"></p>
         </div>
       </div>
        <div class="row marketing">
         <div class="col-lg-6 thumbnail">
-          <p><input type="image" name="image" id="puppy" src="http://wallpapercave.com/wp/Q1Bv8jM.jpg" onclick="getValue(4,1)"></p>
+          <p><input type="image" class="img-responsive" name="image" id="puppy" src="http://wallpapercave.com/wp/Q1Bv8jM.jpg" onclick="getValue(4,1)"></p>
         </div>
 
         <div class="col-lg-6 thumbnail">
-          <p><input type="image" name="image" id="inspire" src="https://iso.500px.com/wp-content/uploads/2015/10/yosemite2_cover-1500x1000.jpeg" onclick="getValue(4,10)"></p>
+          <p><input type="image" class="img-responsive" name="image" id="inspire" src="https://iso.500px.com/wp-content/uploads/2015/10/yosemite2_cover-1500x1000.jpeg" onclick="getValue(4,10)"></p>
         </div>
       </div>
       </div>
       <!--question five-->
       <div id="questionFive" class="hidden">
-      <div class="jumbotron question-header">
+      <div class="jumbotron question-header fifth">
         <h2>What is your favorite season?</h2>
       </div>
 
       <div class="row marketing">
-        <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(5,5)">Winter</a></p>
+        <div class="col-lg-6 thumbnail">
+          <p class="season"><input type="image" class="img-responsive" id="winter" href="#" src="./winter.jpeg" onclick="getValue(5,5)">Winter</p>
         </div>
 
-        <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(5,10)">Spring</a></p>
+        <div class="col-lg-6 thumbnail">
+          <p class="season"><input type="image" class="img-responsive" id="spring" href="#" src="./spring.jpg" onclick="getValue(5,10)">Spring</p>
         </div>
       </div>
        <div class="row marketing">
-        <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(5,15)">Summer</a></p>
+        <div class="col-lg-6 thumbnail">
+          <p class="season"><input type="image" class="img-responsive" id="summer" href="#" src="./summer.jpeg" onclick="getValue(5,15)">Summer</p>
         </div>
 
-        <div class="col-lg-6">
-          <p><a class="btn btn-lg btn-success" href="#" role="button" onclick="getValue(5,1)">Fall</a></p>
+        <div class="col-lg-6 thumbnail">
+          <p class="season"><input type="image" class="img-responsive" id="fall" href="#" src="./fall.jpg" onclick="getValue(5,1)">Fall</p>
         </div>
       </div>
       </div>
       <!--answerBox-->
        <div id="answerBox" class="hidden">
-      <div class="jumbotron question-header">
+      <div class="jumbotron question-header last">
         <h2>You got:</h2>
         <h2 id="result"></h2>
       </div>
       </div>
 
       <footer class="footer">
-        <p>&copy; 2015 Company, Inc.</p>
+        <p></p>
       </footer>
 
     </div> <!-- /container -->

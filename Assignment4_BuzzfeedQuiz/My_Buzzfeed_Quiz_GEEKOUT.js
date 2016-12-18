@@ -23,15 +23,19 @@ function totalScore(){
 }
 function analyze(score){
 	if (score >= 5 && score <17){
+		document.getElementById("result").style.transition ="visibility 3s ease-in 5s";
 		document.getElementById("result").innerHTML = "Chocolate!";
 	}
 	else if (score >= 17 && score <32){
+		document.getElementById("result").style.transition ="visibility 3s ease-in 5s";
 		document.getElementById("result").innerHTML  = "Butterfinger!";
 	}
 	else if (score >= 32 && score <47){
+		document.getElementById("result").style.transition ="visibility 3s ease-in 5s";
 		document.getElementById("result").innerHTML  = "Sour Patch Kids!";
 	}
 	else if (score >= 47 && score <75){
+		document.getElementById("result").style.transition ="visibility 3s ease-in 5s";
 		document.getElementById("result").innerHTML  = "Hot Tamales!";
 	}
 }

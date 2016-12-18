@@ -1,15 +1,104 @@
-#questionOne{
-	display: block;
+body{
+	background-color: #DAF7A6;
+	text-align: center;
+	background-image: url(./candy-cover.jpeg);
+	font-family: 'Chewy', cursive;
 }
-#questionTwo{
-	display: none;
+.header.clearfix h3{
+	color: #900C3F;
+	float: left;
+	font-family: 'Chewy', cursive;
+	font-size: 40px;
 }
-#questionThree{
-	display: none;
+.first{
+	background-color: #C70039;
+	border-color: #C70039;
 }
-#questionFour{
-	display: none;
+.first:hover{
+	background-color:  #F16E93;
+	border-color:  #F16E93;
 }
-#questionFive{
-	display: none;
+.coverOne{
+	background-color: #2EC4B6;
+}
+.hidden{
+	transition: visibility 3s ease-in-out;
+}
+.show{
+	transition: visibility 3s ease-in-out;
+}
+#yellow{
+	background-color: #FFC300;
+	border-color: #FFC300;
+}
+#yellow:hover{
+	background-color: #FAF56A;
+	border-color: #FAF56A;
+}
+#blue{
+	background-color:  #6ECBF1;
+	border-color: #6ECBF1;
+}
+#blue:hover{
+	background-color: #AFF0F8;
+	border-color: #AFF0F8;
+}
+#red{
+	background-color: #E70808;
+	border-color: #E70808;
+}
+#red:hover{
+	background-color: #FC6D69;
+	border-color: #FC6D69;
+}
+.coverTwo{
+	background-color: #B746CB;
+}
+.third{
+	background-color: #FA7D2C;
+	border-color: #FA7D2C;
+}
+.third:hover{
+	background-color: #F9A56E;
+	border-color: #F9A56E;
+}
+input#puppy.img-responsive{
+	height: 226.66px;
+}
+#fall{
+	background-image: url(./fall.jpg);
+}
+.season{
+	font-size: 25px;
+}
+input#summer.img-responsive{
+	height: 226.66px;
+	width: 100%;
+}
+input#winter.img-responsive{
+	height: 226.66px;
+	width: 100%;
+}
+input#spring.img-responsive{
+	height: 226.66px;
+	width: 100%;
+}
+input#fall.img-responsive{
+	height: 226.66px;
+	width: 100%;
+}
+.fifth{
+	background-color: #85FAD0;
+}
+.last{
+	background-color: #D1F931;
+}
+#result{
+	animation-name: showResult;
+	animation-duration: 4s;
+	animation-delay: 5s;
+}
+@keyframes showResult{
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
