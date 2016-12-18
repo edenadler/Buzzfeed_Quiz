@@ -1,0 +1,67 @@
+body{
+	margin: 0px;
+	width: 100%;
+}
+.jumbotron.main-image{
+	background-image: url(./candy-cover.jpeg);
+	background-repeat: none;
+	background-size: cover;
+}
+.row.questionOne{
+	width: 100%;
+	height: 100px;
+	display: block;
+	position: relative;
+	font-size: 20px;
+}
+.row.questionTwo{
+	width: 100%;
+	height: 100px;
+	display: block;
+	position: relative;
+	font-size: 20px;
+}
+.row.questionThree{
+	width: 100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	font-size: 20px;
+}
+.row.questionFour{
+	width: 100%;
+	height: 200px;
+	display: block;
+	position: relative;
+	font-size: 20px;
+}
+.row.questionFive{
+	width: 100%;
+	height: 100px;
+	display: block;
+	position: relative;
+	font-size: 20px;
+}
+#green{
+	background-color: green;
+}
+#red{
+	background-color: red;
+}
+#blue{
+	background-color: blue;
+}
+#yellow{
+	background-color: yellow;
+}
+#stunt, #baby, #inspire, #puppy{
+	width: 100%;
+	height: auto;
+}
+#green, #red, #blue, #yellow{
+	width: 50px;
+	height: 35px;
+}
+#showResult{
+	text-align: center;
+}

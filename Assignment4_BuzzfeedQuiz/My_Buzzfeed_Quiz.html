@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>What kind of candy are you?</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./bootstrap/bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="./My_Buzzfeed_Quiz.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./bootstrap/bootstrap/templates/jumbotron/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./My_Buzzfeed_Quiz.js" ></script>
+    <script src="./bootstrap/bootstrap/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron main-image">
+      <div class="container">
+        <h1>What Kind of Candy Are You?</h1>
+        <p>Take5 and find out which candy describes you best. You'll love it to Pieces NowandLater...</p>
+      </div>
+    </div>
+
+    <!-- Main stripes-->
+    <div class="container">
+      <div class="row questionOne">
+        <div class="col-lg-12">
+          
+            <h1>Question 1: What adjective best describes you?</h1><br/>
+            <div class="row questionOne">
+              <div class="col-lg-3">
+                <input type="radio" name="adjective" id="sweet" onclick="saveAnswer(1,1)" > Sweet<br/>
+                <!--chocolate -->
+              </div>
+              <div class="col-lg-3">
+                <input type="radio" name="adjective" id="sour" onclick="saveAnswer(1,10)"> Sour<br/>
+                <!--sour patch -->
+              </div>
+              <div class="col-lg-3">
+                <input type="radio" name="adjective" id="spicy" onclick="saveAnswer(1,15)" > Spicy<br/>
+                <!--Hot Tamales -->
+              </div>
+              <div class="col-lg-3">
+                <input type="radio" name="adjective" id="salty" onclick="saveAnswer(1,5)" > Salty<br/>
+                <!--Butterfinger-->
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="row questionTwo">
+        <div class="col-lg-12">
+          
+            <h1>Question 2: Which color do you like best?</h1><br/>
+            <div class="row questionTwo">
+              <div class="col-lg-3">
+                <input onclick="saveAnswer(2,10)" type="button" name="color" id="green"><br/>
+                <!--sour patch -->
+              </div>
+              <div class="col-lg-3">
+                <input onclick="saveAnswer(2,5)" type="button" name="color" id="yellow"><br/>
+                <!--Butterfinger-->
+              </div>
+              <div class="col-lg-3">
+                <input onclick="saveAnswer(2,1)" type="button" name="color" id="blue"><br/>
+                <!--chocolate -->
+              </div>
+              <div class="col-lg-3">
+                <input onclick="saveAnswer(2,15)" type="button" name="color" id="red"><br/>
+                <!--Hot Tamales -->
+              </div>
+            </div>
+         
+        </div>
+      </div>
+      <!-- <div class="row questionThree">
+        <div class="col-lg-12">
+            <h1>Question 3: How many pieces of your favorite candy can you eat before it makes you sick?</h1><br/>
+              <div class="row questionThree">
+                <div class="col-lg-12">
+                  <form>
+                    <input type="range" name="points" min="0" max="20" step="1" id="inVal" oninput="outputUpdate(value)">
+                    <output for = "inVal" id="measure">10</output>
+                    <input onclick="saveAnswer(3,rangeAnswer())" type="submit">
+                  </form>
+                </div>
+              </div>
+        </div>
+      </div> -->
+      <div class="row questionFour">
+        <div class="col-lg-12">
+          
+            <h1>Question 4: Which image do you like best?</h1><br/>
+            <div class="row questionFour">
+              <div class="col-lg-3 thumbnail">
+                  <input type="image" name="image" id="stunt" src="http://media.carbonated.tv/121489_story__podphoto.jpg" onclick="saveAnswer(4,15)"/>
+                <!--Hot Tamales -->
+              </div>
+              <div class="col-lg-3 thumbnail">
+                <input type="image" name="image" id="baby" src="http://www.picturesofbabies.net/images/FunnyBabyGirl.jpg" onclick="saveAnswer(4,5)"><br/>
+                <!--Butterfinger-->
+              </div>
+              <div class="col-lg-3 thumbnail">
+                <input type="image" name="image" id="inspire" src="https://iso.500px.com/wp-content/uploads/2015/10/yosemite2_cover-1500x1000.jpeg" onclick="saveAnswer(4,10)"><br/>
+                <!--sour patch -->
+              </div>
+              <div class="col-lg-3 thumbnail">
+                <input type="image" name="image" id="puppy" src="http://wallpapercave.com/wp/Q1Bv8jM.jpg" onclick="saveAnswer(4,1)"><br/>
+                <!--chocolate -->
+              </div>
+            </div>
+         
+        </div>
+      </div>
+      <div class="row questionFive">
+        <div class="col-lg-12">
+         
+            <h1>Question 5: What is your favorite season?</h1><br/>
+              <div class="form-group">
+                <div class="row questionFive">
+                  <div class="col-lg-12">
+                    <label for="sel1" placeholder="Select one">Select a season:</label>
+                    <select class="form-control" id="sel1" onchange="answerFive(this)">
+                      <option value=""></option>
+                      <option value="5">Winter</option><!--Butterfinger-->
+                      <option value ="10">Spring</option><!--Sour Patch-->
+                      <option value="15">Summer</option><!--Hot Tamales -->
+                      <option value="1">Fall</option><!--Chocolate-->
+                    </select>
+                  </div>
+                </div>
+              </div>
+            <div id="showResult">
+            <button type="button" class="btn btn-primary answer" onclick="total();">Tell me what candy I am!</button> 
+            </div>
+        </div>
+      </div>
+      </div>
+
+      <!--Chocolate points:1 range: 5-16-->
+      <!--Butterfinger points:5 range: 17-31-->
+      <!--Sour Patch points: 10 range: 32-46-->
+      <!--Hot Tamales points: 15 range: 47-75-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./bootstrap/bootstrap/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./bootstrap/bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./bootstrap/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
